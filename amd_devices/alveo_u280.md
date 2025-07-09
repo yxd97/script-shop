@@ -1,0 +1,16 @@
+## Part Number
+xcu280-fsvh2892-2L-e
+
+## Process
+16nm
+
+## Features
+- 8GB HBM2 memory
+- 2x 100G Full-duplex Ethernet ports
+
+## Device Layout
+| SLR | Clock Regions | Slices | Clock Buffers |
+| --- | ------------- | ------ | ------------- |
+| 0   | CLOCKREGION_X0Y0 : CLOCKREGION_X7Y3 | SLICE_X0Y0:SLICE_X232Y239 | BUFGCTRL_X0Y0:BUFGCTRL_X0Y31 |
+| 1   | CLOCKREGION_X0Y4 : CLOCKREGION_X7Y4 | SLICE_X0Y240:SLICE_X232Y479 | BUFGCTRL_X0Y32:BUFGCTRL_X0Y63 |
+| 2   | CLOCKREGION_X0Y8 : CLOCKREGION_X7Y8 | SLICE_X0Y480:SLICE_X232Y719 | BUFGCTRL_X0Y64:BUFGCTRL_X0Y95 |
