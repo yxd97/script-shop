@@ -30,7 +30,10 @@ close $output_fd
 
 ```tcl
 set slim_options "-no_header -no_pblock -no_pr_attribute -no_report_unconstrained -no_reused_label"
-report_timing -path_type full {*}$slim_options -file "critical_path_report.rpt"
+# use "anchor_left" for human readable reports,
+# use "fixed_width" for easier parsing by scripts
+set column_style "-column_style fixed_width"
+report_timing -path_type full {*}$slim_options {*}$column_style -file "critical_path_report.rpt"
 ```
 
 ## Get the detailed routing path of the critical path
